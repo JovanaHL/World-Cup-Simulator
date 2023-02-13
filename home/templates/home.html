@@ -9,5 +9,11 @@
 <h1>World Cup Simulator</h1>
 <p>This is just the start of my web app.</p>
 
+<p>
+    {% for x in team %}
+        <li>{{ x.rank }} {{ x.country_name }} {{ x.country_code }} {{ x.points }}</li>
+    {% endfor %}
+</p>
+
 </body>
 </html>
