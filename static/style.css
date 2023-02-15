@@ -39,7 +39,7 @@ menu,
 nav,
 section,
 summary {
- display:block;
+    display:block;
 }
 
 body,
@@ -49,198 +49,197 @@ select,
 td,
 textarea,
 th {
- font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 body,
 html {
- min-height: 100%;
- margin: 0;
+    min-height: 100%;
+    margin: 0;
 }
 html {
- font-size:13px;
+    font-size:13px;
 }
 html.mobile {
- font-size:12px;
+    font-size:12px;
 }
 body {
- color:#9ab;
- font-size:1rem
+    color:#9ab;
+    font-size:1rem
 }
 
 /* ------------ main content stuff  ----------------------- */
-main {
-    padding: var(--default-padding) 12px;
-}
+/* TODO:
+    - Separate in blocks for better readability
+    - Filter out CSS not in use, be more deliberate
+*/
 
 .site-header {
- margin: 275px 200px 0 200px;
- height:72px;
- position:relative;
- z-index:1100;
-padding: 8px 16px;
-font-size: 15px; font-size: 1.5rem;
-background-color: var(--secondary-color);
-border-radius: 3px;
+    margin: 275px 200px 0 200px;
+    height:72px;
+    position:relative;
+    z-index:1100;
+    padding: 8px 16px;
+    font-size: 15px; font-size: 1.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 3px;
 }
-
 .site-header .site-title {
-  padding-top: 10px;
-  float: initial;
-  position: relative;
-  color: #fff;
-  font-size: 28px;
+    padding-top: 10px;
+    float: initial;
+    position: relative;
+    color: #fff;
+    font-size: 28px;
 }
 .site-header section {
-text-align: center;
- height:72px;
- margin:0 auto;
- position:relative;
- width:950px;
+    text-align: center;
+    height:72px;
+    margin:0 auto;
+    position:relative;
+    width:950px;
 }
 .backdrop-container {
-  background: rgb(242,249,28);
-background: linear-gradient(95deg, rgba(242,249,28,1) 1%, rgba(235,232,0,1) 38%, rgba(236,179,203,1) 57%, rgba(236,179,203,1) 100%);
-height: 325px;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 0;
+    background: rgb(242,249,28);
+    background: linear-gradient(95deg, rgba(242,249,28,1) 1%, rgba(235,232,0,1) 38%, rgba(236,179,203,1) 57%, rgba(236,179,203,1) 100%);
+    height: 325px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
 }
 .backdrop-wrapper {
-  height: 475px;
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: 1600px;
-  z-index: 0;
+    height: 475px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 1600px;
+    z-index: 0;
 }
 .backdrop-wrapper.-loaded > .backdropimage {
-  opacity: 1;
+    opacity: 1;
 }
 .backdrop-wrapper > .backdropimage {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 99.95%;
-  position: absolute;
-  width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 99.95%;
+    position: absolute;
+    width: 100%;
 }
 .backdrop-wrapper>.backdropmask {
- padding-top:500px;
- position:relative
+    padding-top:500px;
+    position:relative
 }
 .backdrop-wrapper>.backdropmask:before {
-   background: rgb(242,249,28);
-background: linear-gradient(95deg, rgba(242,249,28,1) 1%, rgba(235,232,0,0) 7%, rgba(236,179,203,0) 91%, rgba(236,179,203,1) 100%);
-background-repeat:no-repeat;
- content:"";
- display:block;
- height:475px;
- left:50%;
- pointer-events:none;
- position:absolute;
- top:0;
- transform:translateX(-50%);
- width:1600px;
- z-index:0
+    background: rgb(242,249,28);
+    background: linear-gradient(95deg, rgba(242,249,28,1) 1%, rgba(235,232,0,0) 7%, rgba(236,179,203,0) 91%, rgba(236,179,203,1) 100%);
+    background-repeat:no-repeat;
+    content:"";
+    display:block;
+    height:475px;
+    left:50%;
+    pointer-events:none;
+    position:absolute;
+    top:0;
+    transform:translateX(-50%);
+    width:1600px;
+    z-index:0
 }
 .site-body.-backdrop {
-  background-image: none;
-  padding-top: 0px;
+    background-image: none;
+    padding-top: 0px;
 }
 .site-body {
-  /*background:#14181c url(../img/content-bg.0d9a0f0f.png) 0 -1px repeat-x;*/
-  padding: 30px 0;
+    padding: 30px 0;
     padding-top: 30px;
 }
 .nav {
- margin:10px auto 30px;
- max-width:1054px;
- padding: 0 15px;
- display: table;
+    margin:10px auto 30px;
+    max-width:1054px;
+    padding: 0 15px;
+    display: table;
 }
 .nav .form-wrap {
- display:flex;
- justify-content:center;
- margin:0 auto;
- max-width:400px;
+    display:flex;
+    justify-content:center;
+    margin:0 auto;
+    max-width:400px;
 }
 @media (min-width: 768px) {
  .nav .form-wrap {
-  justify-content:space-between;
-  border-bottom:1px solid #222;
-  padding-bottom:10px;
-  max-width:none;
-  align-items:flex-end
+    justify-content:space-between;
+    border-bottom:1px solid #222;
+    padding-bottom:10px;
+    max-width:none;
+    align-items:flex-end
  }
 }
 .nav .nav-toggle {
- display:flex;
- margin-right:15px
+    display:flex;
+    margin-right:15px;
 }
 .nav .toggle-radio {
- position:absolute;
- left:-9999px
+    position:absolute;
+    left:-9999px;
 }
 .nav .toggle-radio:checked+.toggle-label {
- background:#fff;
- font-weight:700
+    background:#fff;
+    font-weight:700;
 }
 .nav .toggle-radio:checked+.toggle-label:hover {
- background:#fff
+    background:#fff;
 }
 .nav .toggle-label {
- height:40px;
- transition:0.2s background ease-in-out;
- background:#fafafa;
- display:inline-block;
- padding:0 10px;
- border:1px solid #cdcdcd;
- margin-right:-2px;
- cursor:pointer;
- min-width:400px;
- text-align:center
+    height:40px;
+    transition:0.2s background ease-in-out;
+    background:#fafafa;
+    display:inline-block;
+    padding:0 10px;
+    border:1px solid #cdcdcd;
+    margin-right:-2px;
+    cursor:pointer;
+    min-width:400px;
+    text-align:center;
 }
 @media (min-width: 768px) {
  .nav .toggle-label {
-  padding:0 20px;
-  min-width:130px
+    padding:0 20px;
+    min-width:130px;
  }
 }
 .nav .toggle-label:hover {
- background:#f0f0f0
+    background:#f0f0f0;
 }
 .nav .toggle-label-text {
- font-family: 'Roboto Condensed', sans-serif;
- font-size:16px;
- color:#222;
- transition:0.2s color ease-in-out;
- padding-top:12.5px;
- display:inline-block
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:16px;
+    color:#222;
+    transition:0.2s color ease-in-out;
+    padding-top:12.5px;
+    display:inline-block;
 }
 @media (min-width: 768px) {
  .nav .toggle-label-text.show-mobile {
-  display:none
+    display:none;
  }
 }
 .nav .toggle-label-text.show-desktop {
- display:none
+    display:none;
 }
 @media (min-width: 768px) {
  .nav .toggle-label-text.show-desktop {
-  display:inline-block
+    display:inline-block;
  }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
  .nav .toggle-label-text {
-  padding-top:11px
+    padding-top:11px;
  }
 }
 @supports (-ms-ime-align: auto) {
  .nav .toggle-label-text {
-  padding-top:11px
+    padding-top:11px;
  }
 }
